@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import Header from "./Header";
 import "./App.css";
 
 class App extends Component {
@@ -7,7 +7,9 @@ class App extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-1">hello</div>
+          <div className="col-1 offset-5">
+            <Header age={12}></Header>
+          </div>
         </div>
       </div>
     );
